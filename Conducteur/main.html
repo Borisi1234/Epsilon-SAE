@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Epsilon - Main</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='./CSS/main.css'>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
+    <script src='./JS/main.js'></script>
+</head>
+<body>
+    <header>
+        <div id="interface1">
+            Epsilon beta 0.0.1
+            <div id="div_horloge"></div>
+        </div>
+    </header>
+
+    <main>
+        <div>
+            <a href="./connexion.html">
+                <div id="bouton1">
+                    Conenxion
+                </div>
+            </a>
+        </div>
+    </main>
+
+
+
+    <script type="text/javascript">
+        window.onload=function() {
+            horloge('div_horloge');
+        };
+
+        function horloge(el) {
+        if(typeof el=="string") { el = document.getElementById(el); }
+        function actualiser() {
+        var date = new Date();
+        var str = date.getHours();
+        str += ':'+(date.getMinutes()<10?'0':'')+date.getMinutes();
+        str += ':'+(date.getSeconds()<10?'0':'')+date.getSeconds();
+        el.innerHTML = str;
+        }
+        actualiser();
+        setInterval(actualiser,1000);
+        }
+    </script>
+</body>
+</html>

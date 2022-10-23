@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Epsilon - login</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='./CSS/login.css'>
+    <script src='main.js'></script>
+</head>
+<body>
+
+    <header>
+        <div id="interface1">
+            Epsilon beta 0.0.1
+            <div id="div_horloge"></div>
+        </div>
+    </header>
+
+    <main>
+        <div id="texte1">
+            <h1>
+                Information
+            </h1>
+            Le SAE Epsilon étant encore en cours de programation, le systeme de connection n'est pas encore disponible
+            <br>
+            Pour accéder au reste du site, nous vous invitons a appuyer sur le bouton si dessous.
+            <br>
+            L'équipe de devloppement c'excuse pour la gène occasionné.
+        </div>
+
+        <br>
+
+        <div id="center">
+            <a href="index.html">
+                <div id="bouton2">
+                    <div id="texte2">
+                        Continuer
+                    </div>
+                    
+                </div>
+            </a>
+        </div>
+    </main>
+    
+
+    <script type="text/javascript">
+        window.onload=function() {
+            horloge('div_horloge');
+        };
+
+        function horloge(el) {
+        if(typeof el=="string") { el = document.getElementById(el); }
+        function actualiser() {
+        var date = new Date();
+        var str = date.getHours();
+        str += ':'+(date.getMinutes()<10?'0':'')+date.getMinutes();
+        str += ':'+(date.getSeconds()<10?'0':'')+date.getSeconds();
+        el.innerHTML = str;
+        }
+        actualiser();
+        setInterval(actualiser,1000);
+        }
+    </script>
+</body>
+</html>

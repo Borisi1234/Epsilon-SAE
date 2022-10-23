@@ -1,0 +1,21 @@
+button{
+    width: 30vw;
+    font-size: 3vh;
+}
+
+body{
+    background-image: url(./logo.png);
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: 33%;
+    margin: auto;
+    width: 100vw;
+}
+#lot1{
+    text-align: center;
+    margin-top: 33%;
+}
+
+#logout{
+    height: 3vh;
+}

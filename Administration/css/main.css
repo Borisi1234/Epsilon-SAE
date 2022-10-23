@@ -1,0 +1,50 @@
+body{
+    background-color: wheat;
+    margin: 0px;
+}
+
+#interface1{
+    color: white;
+    background-color: grey;
+    height: 6vh;
+    font-size: 5vh;
+    align-items: center;
+}
+
+#div_horloge{
+    position: absolute;
+    bottom: 0;
+    height: 5vh;
+    width: 15vh;
+    background-color: grey;
+    border-radius: 15px;
+    text-align: center;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#box1{
+    margin-left: 3vw;
+}
+
+#texte1{
+    margin-left: 1vw
+}
+
+#actu1{
+background-color: white;
+width: 45vw;
+height: 7vh;
+border-radius: 15px;
+}
+
+#bouton1{
+    background-color: lightgray;
+    font-size: 3vh;
+    width: auto;
+    border-radius: 1vh;
+    float: right;
+    margin-right: 5vw;
+    margin-top: 1vh;
+    vertical-align: middle;
+}

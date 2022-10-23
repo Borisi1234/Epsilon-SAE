@@ -1,0 +1,38 @@
+body{
+    background-color: wheat;
+    margin: 0px;
+}
+
+#interface1{
+    color: white;
+    background-color: grey;
+    height: 7vh;
+    font-size: 6vh;
+    align-items: center;
+}
+
+#div_horloge{
+    float: right;
+}
+
+#texte1{
+text-align: center;
+margin-left: 5vw;
+
+}
+
+#center{
+    text-align: center;
+}
+
+#bouton2{
+    width:22vw;
+    height: 11vw;
+    border-radius: 2vw;
+    background-color: white;
+    vertical-align: middle;
+}
+
+
+
+
