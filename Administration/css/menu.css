@@ -4,6 +4,7 @@ button{
 }
 
 body{
+    background-color: #E2E2E2;
     background-image: url(./logo.png);
     background-repeat: no-repeat;
     background-position: top;

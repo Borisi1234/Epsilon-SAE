@@ -3,93 +3,52 @@
 <head>
     <meta charset='utf-8'>
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <title>adminEpsilon - Accueil</title>
+    <title>Page Title</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel='stylesheet' type='text/css' media='screen' href='./css/main.css'>
     <script src='main.js'></script>
 </head>
 <body>
-
     <header>
-        <div id="interface1">
-            AdminEpsilon beta 0.0.1
-
-            <div id="bouton1">
-                <a href="#">Conexion</a>
-            </div>
-
-        </div>
-
+        <div class="loader"></div>
     </header>
 
     <main>
+        <div id="block1">
+            <h1>Connexion</h1>
 
-        <div id="box1">
-            <h1>
-                Actualités :
-            </h1>
-            <div id="actu1">
+            <div>
                 <div id="texte1">
-                    <h4>
-                        La beta 0.0.1 est dévlopée durant la 3eme edition de la DevNight.
-                        <br>
-                        <a href="#">Voir plus</a>
-                    </h4>
+                    Identifiant
                 </div>
-                
+                <input type="text"> 
             </div>
-
-            <div id="actu1">
+            <br>
+            <div>
                 <div id="texte1">
-                    <h4>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ultrices mi ex, at sollicitudin urna.
-                        <br>
-                        <a href="#">Voir plus</a>
-                    </h4>
+                    Mot de passe : 
                 </div>
-                
+                <input type="password" name="test" id="">
             </div>
-
-            <div id="actu1">
-                <div id="texte1">
-                    <h4>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ultrices mi ex, at sollicitudin urna.
-                        <br>
-                        <a href="#">Voir plus</a>
-                    </h4>
-                </div>
-                
+            <br>
+            <br>
+            <div>
+                <button>
+                    <a href="./Menu.html">Conexion</a>
+                </button>
             </div>
-
-
-            
-
         </div>
 
     </main>
-
+    
     <footer>
-        <div id="div_horloge"></div>
+
     </footer>
 
-    <script type="text/javascript">
-        window.onload=function() {
-            horloge('div_horloge');
-        };
-
-        function horloge(el) {
-        if(typeof el=="string") { el = document.getElementById(el); }
-        function actualiser() {
-        var date = new Date();
-        var str = date.getHours();
-        str += ':'+(date.getMinutes()<10?'0':'')+date.getMinutes();
-        str += ':'+(date.getSeconds()<10?'0':'')+date.getSeconds();
-        el.innerHTML = str;
-        }
-        actualiser();
-        setInterval(actualiser,1000);
-        }
-    </script>
-
+    <script type="text/javascript" src="http://code.jquery.com/jquery-latest.js"></script>
+<script type="text/javascript">
+$(window).load(function() {
+$(".loader").fadeOut("1000"); })
+</script>
 </body>
 </html>
